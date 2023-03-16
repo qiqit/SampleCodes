@@ -24,10 +24,10 @@ print(GENOME)
 # Read in data
 Metadata <- read.csv(GENOME, header=T)
 bgc_count <- read.csv(BGC, header=T, row.names = 1)
-#bgc_count<-t(bgc_count)
+
 # first filter genomes without any BGC predicted
 Metadata <- Metadata[match(rownames(bgc_count),Metadata$filename),]
-# Choose one of the phyla (Here we choose Firmicutes)
+# Choose one of the phyla
 Metadata <- Metadata[which(Metadata$taxonomy_NCBI_2 == phylum),]
 Metadata <- droplevels(Metadata)
 bgc_count <- bgc_count[match(Metadata$filename,rownames(bgc_count)),]
