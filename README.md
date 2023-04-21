@@ -34,8 +34,4 @@ Conver Biom file to three dataframes containing whole BGC coverage score, core B
 - The heatmap is based on abundance of every BGC in every metagenome samples.  
 - Whole coverage, core coverage, marks to known BGC are included in the annotation. 
 
-### biomarker_identification.md
-- Records the steps for a small technique chanllenge
-- Need to use two biomarker protein sequences to identify bacteria strains containing both biomarkers.
-- HMM profile generation
-- Taxanomic identification
+
